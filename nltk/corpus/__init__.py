@@ -152,6 +152,8 @@ multext_east = LazyCorpusLoader(
     'mte_teip5', MTECorpusReader, r'(oana).*\.xml', encoding="utf-8")
 names = LazyCorpusLoader(
     'names', WordListCorpusReader, r'(?!\.).*\.txt', encoding='ascii')
+ndt = LazyCorpusLoader(
+    'ndt', NdtCorpusReader, '.*\.conll')
 nps_chat = LazyCorpusLoader(
     'nps_chat', NPSChatCorpusReader, r'(?!README|\.).*\.xml', tagset='wsj')
 opinion_lexicon = LazyCorpusLoader(
