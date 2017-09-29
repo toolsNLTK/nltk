@@ -244,7 +244,7 @@ class NdtCorpusReader(CorpusReader):
         else:
             all_words = []
             for i in doclist:
-                all_words.append(self.get_data(i, word, lma, tags, morph, head, dep, opt))
+                all_words.append(self.get_data(i, index, word, lma, tags, morph, head, dep, opt))
             return all_words
 
 
